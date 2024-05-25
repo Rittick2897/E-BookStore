@@ -1,0 +1,5 @@
+﻿@model List<Bookish.Models.Book>
+<div>
+    <img src="~/lib/Psychology-of-Money-Book.jpg" />
+    <p>@Model.Where(c => c.Book_Id == 1000000).First().Book_Name</p>
+</div>

@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .book {
+            display: inline-block;
+            text-align: center;
+            margin: 10px;
+        }
+
+            .book img {
+                max-width: 150px;
+                height: auto;
+                border-radius: 5px;
+                margin-bottom: 5px;
+            }
+
+            .book p {
+                margin: 0;
+            }
+    </style>
+</head>
+<body>
+    <form asp-controller="Home" asp-action="Index">
+    <div class="container">
+        <h1>Book List</h1>
+        <div class="books">
+            <div class="book">
+                    <a href="/Home/PscychologyOfMoney">
+                <img src="~/lib/Psychology-of-Money-Book.jpg" alt="Book 1">
+                        <p href="/Home/PscychologyOfMoney">Psychology of Money</p>
+                </a>
+            </div>
+            <div class="book">
+                <img src="~/lib/9781612680194.jpg" alt="Book 1">
+                <p>Rich Dad Poor Dad</p>
+            </div>
+            <div class="book">
+                <img src="~/lib/OIP.jpeg" alt="Book 2">
+                <p>The Power Of Habit</p>
+            </div>
+            <!-- Add more book divs as needed -->
+        </div>
+    </div>
+    </form>
+</body>
+</html>
